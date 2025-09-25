@@ -1,0 +1,278 @@
+{
+	"info": {
+		"_postman_id": "0fbf5897-c3b2-422c-a461-2a82e3e2a4db",
+		"name": "GAS & FEE METHODS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40386358",
+		"_collection_link": "https://www.postman.com/navigation-observer-13966261/workspace/cdk-erigon-rpc-methods/collection/40386358-0fbf5897-c3b2-422c-a461-2a82e3e2a4db?action=share&source=collection_link&creator=40386358"
+	},
+	"item": [
+		{
+			"name": "eth_gasPrice",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"jsonrpc\": \"2.0\",\r\n    \"method\": \"eth_gasPrice\",\r\n    \"params\": [],\r\n    \"id\": 2\r\n}"
+				},
+				"url": {
+					"raw": "{{rpc_url}}",
+					"host": [
+						"{{rpc_url}}"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "sample-eth_gasPrice-response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"jsonrpc\": \"2.0\",\r\n    \"method\": \"eth_gasPrice\",\r\n    \"params\": [],\r\n    \"id\": 2\r\n}"
+						},
+						"url": {
+							"raw": "{{rpc_url}}",
+							"host": [
+								"{{rpc_url}}"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "48"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 25 Sep 2025 14:57:46 GMT"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"jsonrpc\": \"2.0\",\n    \"id\": 2,\n    \"result\": \"0x74f95fa00\"\n}"
+				}
+			]
+		},
+		{
+			"name": "eth_estimateGas",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"jsonrpc\": \"2.0\",\r\n    \"method\": \"eth_estimateGas\",\r\n    \"params\": [],\r\n    \"id\": 2\r\n}"
+				},
+				"url": {
+					"raw": "{{rpc_url}}",
+					"host": [
+						"{{rpc_url}}"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "eth_estimateGas",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"jsonrpc\": \"2.0\",\r\n    \"method\": \"eth_estimateGas\",\r\n    \"params\": [],\r\n    \"id\": 2\r\n}"
+						},
+						"url": {
+							"raw": "{{rpc_url}}",
+							"host": [
+								"{{rpc_url}}"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "43"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 25 Sep 2025 14:58:58 GMT"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"jsonrpc\": \"2.0\",\n    \"id\": 2,\n    \"result\": \"0xcf08\"\n}"
+				}
+			]
+		},
+		{
+			"name": "eth_feeHistory",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"jsonrpc\": \"2.0\",\r\n    \"method\": \"eth_feeHistory\",\r\n    \"params\": [\"0x5\", \"latest\", [25,50,75]],\r\n    \"id\": 2\r\n}"
+				},
+				"url": {
+					"raw": "{{rpc_url}}",
+					"host": [
+						"{{rpc_url}}"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "sample-eth_feeHistory-response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"jsonrpc\": \"2.0\",\r\n    \"method\": \"eth_feeHistory\",\r\n    \"params\": [\"0x5\", \"latest\", [25,50,75]],\r\n    \"id\": 2\r\n}"
+						},
+						"url": {
+							"raw": "{{rpc_url}}",
+							"host": [
+								"{{rpc_url}}"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "297"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 25 Sep 2025 15:07:22 GMT"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"jsonrpc\": \"2.0\",\n    \"id\": 2,\n    \"result\": {\n        \"oldestBlock\": \"0x71381b\",\n        \"reward\": [\n            [\n                \"0x0\",\n                \"0x0\",\n                \"0x0\"\n            ],\n            [\n                \"0x8d9ee2000\",\n                \"0x8d9ee2000\",\n                \"0x8d9ee2000\"\n            ],\n            [\n                \"0x0\",\n                \"0x0\",\n                \"0x0\"\n            ],\n            [\n                \"0x0\",\n                \"0x0\",\n                \"0x0\"\n            ],\n            [\n                \"0x0\",\n                \"0x0\",\n                \"0x0\"\n            ]\n        ],\n        \"baseFeePerGas\": [\n            \"0x0\",\n            \"0x0\",\n            \"0x0\",\n            \"0x0\",\n            \"0x0\",\n            \"0x0\"\n        ],\n        \"gasUsedRatio\": [\n            0,\n            2.255022835129239e-10,\n            0,\n            0,\n            0\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "eth_maxPriorityFeePerGas",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"jsonrpc\": \"2.0\",\r\n    \"method\": \"eth_maxPriorityFeePerGas\",\r\n    \"params\": [],\r\n    \"id\": 2\r\n}"
+				},
+				"url": {
+					"raw": "{{rpc_url}}",
+					"host": [
+						"{{rpc_url}}"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "sample-eth_maxPriorityFeePerGas-response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"jsonrpc\": \"2.0\",\r\n    \"method\": \"eth_maxPriorityFeePerGas\",\r\n    \"params\": [],\r\n    \"id\": 2\r\n}"
+						},
+						"url": {
+							"raw": "{{rpc_url}}",
+							"host": [
+								"{{rpc_url}}"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "48"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 25 Sep 2025 15:10:53 GMT"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"jsonrpc\": \"2.0\",\n    \"id\": 2,\n    \"result\": \"0x88b408600\"\n}"
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "rpc_url",
+			"value": "",
+			"type": "default"
+		}
+	]
+}

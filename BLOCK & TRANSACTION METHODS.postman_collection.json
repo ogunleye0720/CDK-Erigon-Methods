@@ -1,0 +1,550 @@
+{
+	"info": {
+		"_postman_id": "a1d1de5d-ce01-47a4-ab30-fa5c6755fad8",
+		"name": "BLOCK & TRANSACTION METHODS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40386358",
+		"_collection_link": "https://www.postman.com/navigation-observer-13966261/workspace/cdk-erigon-rpc-methods/collection/40386358-a1d1de5d-ce01-47a4-ab30-fa5c6755fad8?action=share&source=collection_link&creator=40386358"
+	},
+	"item": [
+		{
+			"name": "eth_blockNumber",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"jsonrpc\": \"2.0\",\r\n    \"method\": \"eth_blockNumber\",\r\n    \"params\": [],\r\n    \"id\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{rpc_url}}",
+					"host": [
+						"{{rpc_url}}"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "sample-eth_blockNumber-response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"jsonrpc\": \"2.0\",\r\n    \"method\": \"eth_blockNumber\",\r\n    \"params\": [],\r\n    \"id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{rpc_url}}",
+							"host": [
+								"{{rpc_url}}"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "45"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 23 Sep 2025 13:35:10 GMT"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"jsonrpc\": \"2.0\",\n    \"id\": 1,\n    \"result\": \"0x472554\"\n}"
+				}
+			]
+		},
+		{
+			"name": "eth_getBlockByNumber",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"jsonrpc\": \"2.0\",\r\n    \"method\": \"eth_getBlockByNumber\",\r\n    \"params\": [\r\n        \"latest\", true\r\n    ],\r\n    \"id\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{rpc_url}}",
+					"host": [
+						"{{rpc_url}}"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "eth_getBlockByNumber-sample-response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"jsonrpc\": \"2.0\",\r\n    \"method\": \"eth_getBlockByNumber\",\r\n    \"params\": [\r\n        \"latest\", true\r\n    ],\r\n    \"id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{rpc_url}}",
+							"host": [
+								"{{rpc_url}}"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "1414"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 23 Sep 2025 14:06:51 GMT"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"jsonrpc\": \"2.0\",\n    \"id\": 1,\n    \"result\": {\n        \"difficulty\": \"0x0\",\n        \"extraData\": \"0x\",\n        \"gasLimit\": \"0x4000000000000\",\n        \"gasUsed\": \"0x0\",\n        \"hash\": \"0x669c83f876b8519deea89d42d0d8ff59299433763cebc6b456f8925b036d261a\",\n        \"logsBloom\": \"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000\",\n        \"miner\": \"0x62932c83c4a226679c1af67ed46e1871cd0a6b4a\",\n        \"mixHash\": \"0x0000000000000000000000000000000000000000000000000000000000000000\",\n        \"nonce\": \"0x0000000000000000\",\n        \"number\": \"0x47268c\",\n        \"parentHash\": \"0xb4fb9dbf8a91117b84bc91530840d33de001486e7cd94b7a010ddb6d9a86753e\",\n        \"receiptsRoot\": \"0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421\",\n        \"sha3Uncles\": \"0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347\",\n        \"size\": \"0x203\",\n        \"stateRoot\": \"0x0488e4e657620a4de70df36f26a5fc703803ab245ce295fac650d391382c0ba2\",\n        \"timestamp\": \"0x68d2a973\",\n        \"totalDifficulty\": \"0x0\",\n        \"transactions\": [],\n        \"transactionsRoot\": \"0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421\",\n        \"uncles\": []\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "eth_getBlockReceipts",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"jsonrpc\": \"2.0\",\r\n    \"method\": \"eth_getBlockReceipts\",\r\n    \"params\": [\"latest\"],\r\n    \"id\": 1\r\n}"
+				},
+				"url": {
+					"raw": "{{rpc_url}}",
+					"host": [
+						"{{rpc_url}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "eth_getBlockByHash",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"jsonrpc\": \"2.0\",\r\n    \"method\": \"eth_getBlockByHash\",\r\n    \"params\": [\"0x3e654867eb251a141dabac273b9fe06a23e5aa207ce7d7b3335097a44e1df094\", false],\r\n    \"id\": 2\r\n}"
+				},
+				"url": {
+					"raw": "{{rpc_url}}",
+					"host": [
+						"{{rpc_url}}"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "sample-eth_getBlockByHash-response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"jsonrpc\": \"2.0\",\r\n    \"method\": \"eth_getBlockByHash\",\r\n    \"params\": [\"0x3e654867eb251a141dabac273b9fe06a23e5aa207ce7d7b3335097a44e1df094\", false],\r\n    \"id\": 2\r\n}"
+						},
+						"url": {
+							"raw": "{{rpc_url}}",
+							"host": [
+								"{{rpc_url}}"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "1555"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 25 Sep 2025 12:59:09 GMT"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"jsonrpc\": \"2.0\",\n    \"id\": 2,\n    \"result\": {\n        \"difficulty\": \"0x0\",\n        \"extraData\": \"0x\",\n        \"gasLimit\": \"0x4000000000000\",\n        \"gasUsed\": \"0x4f36e\",\n        \"hash\": \"0x3e654867eb251a141dabac273b9fe06a23e5aa207ce7d7b3335097a44e1df094\",\n        \"logsBloom\": \"0x000041000000000000000000000000020000000000000000000a00400000000000080c0000000020000000010000000000000000000010000000020000000000000040000000000040002004000000020040000000000000000000000000000001000000000800000000000000000000000000000000000000000000000000000000080000100000000000000000000208000000000000004000000000000000000000000000000000400000000000002000000000000000000002000000008000000001000010400001000000000000000040000140000000000000000000000000000000000000200000000000080000000000000800000000004000000000\",\n        \"miner\": \"0xc61109518a048b1adc094ba661a65f6898c360ff\",\n        \"mixHash\": \"0x0000000000000000000000000000000000000000000000000000000000000000\",\n        \"nonce\": \"0x0000000000000000\",\n        \"number\": \"0x711c8d\",\n        \"parentHash\": \"0x5fe7a1ad58622e55e1d2702cbdbcb61262cbf4beb56816dbe011bd8756a38149\",\n        \"receiptsRoot\": \"0xb485a09795adfcf64bccdff69f6669df4ea3f4a8bd4b98e5861bcf9bc7f8a08b\",\n        \"sha3Uncles\": \"0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347\",\n        \"size\": \"0xeee\",\n        \"stateRoot\": \"0x64c3e49a2323417d15c38c71203d7a7de5e9152c2d1ba50f62cc4a8f77bfeb4b\",\n        \"timestamp\": \"0x68d53a28\",\n        \"totalDifficulty\": \"0x0\",\n        \"transactions\": [\n            \"0xb61bd2eabba76725cb259587037b21d00276440f7a8794e4a4450915479fb003\",\n            \"0xd60d2d0f16bf022075789463357a8e31a00c6ede2b2ef35169c0d4df70a9583a\"\n        ],\n        \"transactionsRoot\": \"0x2a550f7a13ae11227984dfe6c186bbb5759104524fec5974ea1191c843decbcb\",\n        \"uncles\": []\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "eth_getBlockTransactionCountByHash",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"jsonrpc\": \"2.0\",\r\n    \"method\": \"eth_getBlockTransactionCountByHash\",\r\n    \"params\": [\"0x3e654867eb251a141dabac273b9fe06a23e5aa207ce7d7b3335097a44e1df094\"],\r\n    \"id\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{rpc_url}}",
+					"host": [
+						"{{rpc_url}}"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "sample-eth_getBlockTransactionCountByHash-response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"jsonrpc\": \"2.0\",\r\n    \"method\": \"eth_getBlockTransactionCountByHash\",\r\n    \"params\": [\"0x3e654867eb251a141dabac273b9fe06a23e5aa207ce7d7b3335097a44e1df094\"],\r\n    \"id\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{rpc_url}}",
+							"host": [
+								"{{rpc_url}}"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "40"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 25 Sep 2025 13:06:04 GMT"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"jsonrpc\": \"2.0\",\n    \"id\": 2,\n    \"result\": \"0x2\"\n}"
+				}
+			]
+		},
+		{
+			"name": "eth_getBlockTransactionCountByNumber",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"jsonrpc\": \"2.0\",\r\n    \"method\": \"eth_getBlockTransactionCountByNumber\",\r\n    \"params\": [\"latest\"],\r\n    \"id\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{rpc_url}}",
+					"host": [
+						"{{rpc_url}}"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "sample-eth_getBlockTransactionCountByNumber-response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"jsonrpc\": \"2.0\",\r\n    \"method\": \"eth_getBlockTransactionCountByNumber\",\r\n    \"params\": [\"latest\"],\r\n    \"id\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{rpc_url}}",
+							"host": [
+								"{{rpc_url}}"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "40"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 25 Sep 2025 13:09:50 GMT"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"jsonrpc\": \"2.0\",\n    \"id\": 2,\n    \"result\": \"0x0\"\n}"
+				}
+			]
+		},
+		{
+			"name": "eth_getUncleCountByBlockHash",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"jsonrpc\": \"2.0\",\r\n    \"method\": \"eth_getUncleCountByBlockHash\",\r\n    \"params\": [\"0x3e654867eb251a141dabac273b9fe06a23e5aa207ce7d7b3335097a44e1df094\"],\r\n    \"id\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{rpc_url}}",
+					"host": [
+						"{{rpc_url}}"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "sample-eth_getUncleCountByBlockHash-response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"jsonrpc\": \"2.0\",\r\n    \"method\": \"eth_getUncleCountByBlockHash\",\r\n    \"params\": [\"0x3e654867eb251a141dabac273b9fe06a23e5aa207ce7d7b3335097a44e1df094\"],\r\n    \"id\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{rpc_url}}",
+							"host": [
+								"{{rpc_url}}"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "40"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 25 Sep 2025 13:49:59 GMT"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"jsonrpc\": \"2.0\",\n    \"id\": 2,\n    \"result\": \"0x0\"\n}"
+				}
+			]
+		},
+		{
+			"name": "eth_getUncleCountByBlocknumber",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"jsonrpc\": \"2.0\",\r\n    \"method\": \"eth_getUncleCountByBlockNumber\",\r\n    \"params\": [\"0x71056d\"],\r\n    \"id\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{rpc_url}}",
+					"host": [
+						"{{rpc_url}}"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "sample-eth_getUncleCountByBlockNumber-response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"jsonrpc\": \"2.0\",\r\n    \"method\": \"eth_getUncleCountByBlockNumber\",\r\n    \"params\": [\"0x71056d\"],\r\n    \"id\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{rpc_url}}",
+							"host": [
+								"{{rpc_url}}"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "40"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 25 Sep 2025 13:56:17 GMT"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"jsonrpc\": \"2.0\",\n    \"id\": 2,\n    \"result\": \"0x0\"\n}"
+				}
+			]
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"jsonrpc\": \"2.0\",\r\n    \"method\": \"eth_getStorageAt\",\r\n    \"params\": [\"0xf37510fC77870b2fd5b43E6B8C97162af87d1fb6\",\"0x0\",\"latest\"],\r\n    \"id\": 2\r\n}"
+				},
+				"url": {
+					"raw": "{{rpc_url}}",
+					"host": [
+						"{{rpc_url}}"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "rpc_url",
+			"value": ""
+		}
+	]
+}
