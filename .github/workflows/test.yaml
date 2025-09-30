@@ -1,0 +1,31 @@
+name: Run Postman Collections
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  newman-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Install Newman
+        run: npm install -g newman
+
+      - name: Run All Postman Collections
+        run: |
+          set -e  # stop if any command fails
+          for collection in RPC-POSTMAN-COLLECTIONS/*postman_collection.json; do
+            echo "Running $collection ..."
+            newman run "$collection" \
+              --env-var BASE_URL=${{ secrets.rpc_url }} \
+              --reporters cli,junit \
+              --reporter-junit-export "newman-results-$(basename $collection .json).xml"
+          done
