@@ -45,7 +45,7 @@ Execute requests directly from Postman.
 This repo includes a GitHub Actions workflow using Newman:
 
 ```bash
-newman run RPC-POSTMAN-COLLECTIONS/<your_collection>.postman_collection.json \
+newman run CDK-Erigon-Methods<your_collection>.postman_collection.json \
   --env-var BASE_URL=<your_rpc_url>
 ```
 
