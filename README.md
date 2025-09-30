@@ -28,7 +28,7 @@ A valid RPC URL (injected via environment variable rpc_url)
 
 ## Usage
 
-1. Run locally with Postman
+### Test Locally with CLI
 
 Import a collection from RPC-POSTMAN-COLLECTIONS/ into Postman.
 
@@ -40,7 +40,7 @@ Additional variables (like account addresses) if needed.
 
 Execute requests directly from Postman.
 
-2. Run in CI/CD
+Run in CI/CD
 
 This repo includes a GitHub Actions workflow using Newman:
 
