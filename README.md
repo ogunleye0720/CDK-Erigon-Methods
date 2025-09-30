@@ -1,19 +1,19 @@
-CDK Erigon RPC Methods – Postman Collections
+# CDK Erigon RPC Methods – Postman Collections
 
-🚀 This repository contains a curated set of Postman collections for testing and interacting with CDK Erigon RPC methods.
+This repository contains a curated set of Postman collections for testing and interacting with CDK Erigon RPC methods.
 It is designed to help developers, DevOps engineers, and support teams quickly query blockchain data, debug nodes, and validate RPC endpoints without manually building requests.
 
 ```bash
 Repository Structure
 .
-├── RPC-POSTMAN-COLLECTIONS/   # JSON Postman collections organized by category
+├── RPC-POSTMAN-COLLECTIONS   # JSON Postman collections organized by category
 ├── .github/workflows/         # GitHub Actions CI/CD pipelines
 │   ├── postman-tests.yml      # Runs all Postman collections with Newman
 │   └── readme-lint.yml        # Lints README for formatting
 └── README.md
 ```
 
-🔧 Prerequisites
+## Prerequisites
 
 Postman
  (for local testing)
@@ -21,9 +21,9 @@ Postman
 Newman
  (for CLI runs)
 
-A valid RPC URL (injected via environment variable BASE_URL)
+A valid RPC URL (injected via environment variable rpc_url)
 
-🚀 Usage
+## Usage
 1. Run locally with Postman
 
 Import a collection from RPC-POSTMAN-COLLECTIONS/ into Postman.
@@ -46,13 +46,13 @@ newman run RPC-POSTMAN-COLLECTIONS/<your_collection>.postman_collection.json \
 ```
 
 
-CI ensures:
+## CI ensures:
 
 All collections run successfully against your configured endpoint.
 
-Hardcoded URLs are blocked → all requests must use {{BASE_URL}}.
+Hardcoded URLs are blocked → all requests must use {{rpc_url}}.
 
-✅ Continuous Integration
+Continuous Integration
 
 Postman Tests Workflow
 Runs all Postman collections automatically on pushes/PRs to main.
@@ -60,12 +60,12 @@ Fails if:
 
 Any test fails in a collection.
 
-A collection uses a hardcoded RPC URL instead of {{BASE_URL}}.
+A collection uses a hardcoded RPC URL instead of {{rpc_url}}.
 
 README Lint Workflow
 Lints README.md with markdownlint whenever the file is updated.
 
-🤝 Contributing
+## Contributing
 
 Fork the repo and create a feature branch:
 
@@ -74,10 +74,9 @@ git checkout -b feature/add-new-methods
 
 ```
 
-
 Add or update Postman collections inside RPC-POSTMAN-COLLECTIONS/.
 
-Make sure all requests use {{BASE_URL}} (no hardcoded URLs).
+Make sure all requests use {{rpc_url}} (no hardcoded URLs).
 
 Test locally with Newman.
 
