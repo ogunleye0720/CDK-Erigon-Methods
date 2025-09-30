@@ -22,10 +22,10 @@ jobs:
       - name: Run All Postman Collections
         run: |
           set -e  # stop if any command fails
-          for collection in RPC-POSTMAN-COLLECTIONS/*postman_collection.json; do
+          for collection in ./*postman_collection.json; do
             echo "Running $collection ..."
             newman run "$collection" \
-              --env-var BASE_URL=${{ secrets.rpc_url }} \
+              --env-var rpc_url=${{ secrets.rpc_url }} \
               --reporters cli,junit \
               --reporter-junit-export "newman-results-$(basename $collection .json).xml"
           done
