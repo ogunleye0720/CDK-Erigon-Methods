@@ -1,12 +1,15 @@
 # CDK Erigon RPC Methods – Postman Collections
 
-This repository contains a curated set of Postman collections for testing and interacting with CDK Erigon RPC methods.
-It is designed to help developers, DevOps engineers, and support teams quickly query blockchain data, debug nodes, and validate RPC endpoints without manually building requests.
+This repository contains a curated set of Postman
+collections for testing and interacting with CDK Erigon RPC methods.
+It is designed to help developers, DevOps engineers,
+and support teams quickly query blockchain data, debug nodes,
+and validate RPC endpoints without manually building requests.
 
 ```bash
 Repository Structure
 .
-├── RPC-POSTMAN-COLLECTIONS   # JSON Postman collections organized by category
+├── RPC-POSTMAN-COLLECTIONS   # JSON Postman collections
 ├── .github/workflows/         # GitHub Actions CI/CD pipelines
 │   ├── postman-tests.yml      # Runs all Postman collections with Newman
 │   └── readme-lint.yml        # Lints README for formatting
@@ -24,13 +27,14 @@ Newman
 A valid RPC URL (injected via environment variable rpc_url)
 
 ## Usage
+
 1. Run locally with Postman
 
 Import a collection from RPC-POSTMAN-COLLECTIONS/ into Postman.
 
 Create a Postman environment with:
 
-BASE_URL → Your RPC endpoint (e.g., https://rpc.testnet.sentient.org).
+rpc_url → Your RPC endpoint.
 
 Additional variables (like account addresses) if needed.
 
@@ -45,8 +49,7 @@ newman run RPC-POSTMAN-COLLECTIONS/<your_collection>.postman_collection.json \
   --env-var BASE_URL=<your_rpc_url>
 ```
 
-
-## CI ensures:
+CI ensures:
 
 All collections run successfully against your configured endpoint.
 
