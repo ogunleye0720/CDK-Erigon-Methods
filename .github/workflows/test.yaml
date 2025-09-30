@@ -19,6 +19,17 @@ jobs:
       - name: Install Newman
         run: npm install -g newman
 
+      - name: Check for hardcoded endpoints
+        run: |
+          echo "🔍 Checking Postman collections for hardcoded URLs..."
+          for collection in ./*postman_collection.json; do
+            if grep -E '"url":\s*"https?://[^"]+' "$collection"; then
+              echo "Hardcoded URL found in $collection"
+              exit 1
+            else
+              echo "$collection uses variables"
+            fi
+          done
       - name: Run All Postman Collections
         run: |
           set -e  # stop if any command fails
