@@ -21,7 +21,7 @@ jobs:
 
       - name: Check for hardcoded endpoints
         run: |
-          echo "🔍 Checking Postman collections for hardcoded URLs..."
+          echo "Checking Postman collections for hardcoded URLs..."
           for collection in ./*postman_collection.json; do
             if grep -E '"url":\s*"https?://[^"]+' "$collection"; then
               echo "Hardcoded URL found in $collection"
