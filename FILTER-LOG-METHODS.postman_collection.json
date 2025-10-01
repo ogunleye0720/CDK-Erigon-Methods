@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "3374fb9a-8d38-4c4b-8a13-ebb610052a4f",
-		"name": "FILTER & LOG METHODS",
+		"name": "FILTER-LOG-METHODS",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "40386358",
 		"_collection_link": "https://www.postman.com/navigation-observer-13966261/workspace/cdk-erigon-rpc-methods/collection/40386358-3374fb9a-8d38-4c4b-8a13-ebb610052a4f?action=share&source=collection_link&creator=40386358"
@@ -29,12 +29,6 @@
 					""
 				]
 			}
-		}
-	],
-	"variable": [
-		{
-			"key": "rpc_url",
-			"value": ""
 		}
 	]
 }

@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "a1d1de5d-ce01-47a4-ab30-fa5c6755fad8",
-		"name": "BLOCK & TRANSACTION METHODS",
+		"name": "BLOCK-TRANSACTION-METHODS",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "40386358",
 		"_collection_link": "https://www.postman.com/navigation-observer-13966261/workspace/cdk-erigon-rpc-methods/collection/40386358-a1d1de5d-ce01-47a4-ab30-fa5c6755fad8?action=share&source=collection_link&creator=40386358"
@@ -22,9 +22,13 @@
 					}
 				},
 				"url": {
-					"raw": "{{rpc_url}}",
+					"raw": "https://haust-devnet-rpc.eu-north-2.gateway.fm",
+					"protocol": "https",
 					"host": [
-						"{{rpc_url}}"
+						"haust-devnet-rpc",
+						"eu-north-2",
+						"gateway",
+						"fm"
 					]
 				}
 			},
@@ -83,7 +87,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"jsonrpc\": \"2.0\",\r\n    \"method\": \"eth_getBlockByNumber\",\r\n    \"params\": [\r\n        \"latest\", true\r\n    ],\r\n    \"id\": 1\r\n}",
+					"raw": "{\r\n    \"jsonrpc\": \"2.0\",\r\n    \"method\": \"eth_getBlockByNumber\",\r\n    \"params\": [\r\n        \"finalized\", true\r\n    ],\r\n    \"id\": 1\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -505,7 +509,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"jsonrpc\": \"2.0\",\r\n    \"method\": \"eth_getStorageAt\",\r\n    \"params\": [\"0xf37510fC77870b2fd5b43E6B8C97162af87d1fb6\",\"0x0\",\"latest\"],\r\n    \"id\": 2\r\n}"
+					"raw": "{\r\n    \"jsonrpc\": \"2.0\",\r\n    \"method\": \"eth_newBlockFilter\",\r\n    \"params\": [],\r\n    \"id\": 2\r\n}"
 				},
 				"url": {
 					"raw": "{{rpc_url}}",
@@ -539,12 +543,6 @@
 					""
 				]
 			}
-		}
-	],
-	"variable": [
-		{
-			"key": "rpc_url",
-			"value": ""
 		}
 	]
 }

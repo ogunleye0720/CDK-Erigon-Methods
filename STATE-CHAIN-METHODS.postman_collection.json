@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "49d7eda5-dbbd-4a11-93a4-2e1c16fd9423",
-		"name": "STATE & CHAIN METHODS",
+		"name": "STATE-CHAIN-METHODS",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "40386358",
 		"_collection_link": "https://www.postman.com/navigation-observer-13966261/workspace/cdk-erigon-rpc-methods/collection/40386358-49d7eda5-dbbd-4a11-93a4-2e1c16fd9423?action=share&source=collection_link&creator=40386358"
@@ -266,12 +266,6 @@
 					""
 				]
 			}
-		}
-	],
-	"variable": [
-		{
-			"key": "rpc_url",
-			"value": ""
 		}
 	]
 }

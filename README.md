@@ -6,37 +6,23 @@ It is designed to help developers, DevOps engineers,
 and support teams quickly query blockchain data, debug nodes,
 and validate RPC endpoints without manually building requests.
 
-```bash
-Repository Structure
-.
-├── RPC-POSTMAN-COLLECTIONS   # JSON Postman collections
-├── .github/workflows/         # GitHub Actions CI/CD pipelines
-│   ├── test.yml      # Runs all Postman collections with Newman
-│   └── lint.yml        # Lints README for formatting
-└── README.md
-```
-
 ## Prerequisites
 
 Postman
- (for local testing)
 
 Newman
- (for CLI runs)
+ (for local testting)
 
 A valid RPC URL (injected via environment variable rpc_url)
 
 ## Usage
 
-### Test Locally with CLI
-
-Import a collection from RPC-POSTMAN-COLLECTIONS/ into Postman.
+Import a collection from RPC-POSTMAN-COLLECTIONS/ into Postman
+workspace.
 
 Create a Postman environment with:
 
 rpc_url → Your RPC endpoint.
-
-Additional variables (like account addresses) if needed.
 
 Execute requests directly from Postman.
 

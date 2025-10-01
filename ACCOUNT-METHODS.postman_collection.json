@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "071f78f1-8aa8-469b-bd6d-6fe99b6a6081",
-		"name": "ACCOUNT METHODS",
+		"name": "ACCOUNT-METHODS",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "40386358",
 		"_collection_link": "https://www.postman.com/navigation-observer-13966261/workspace/cdk-erigon-rpc-methods/collection/40386358-071f78f1-8aa8-469b-bd6d-6fe99b6a6081?action=share&source=collection_link&creator=40386358"
@@ -22,9 +22,9 @@
 					}
 				},
 				"url": {
-					"raw": "{{rpc_url}}",
+					"raw": "{{BASE_URL}}",
 					"host": [
-						"{{rpc_url}}"
+						"{{BASE_URL}}"
 					]
 				}
 			},
@@ -286,12 +286,6 @@
 					""
 				]
 			}
-		}
-	],
-	"variable": [
-		{
-			"key": "rpc_url",
-			"value": ""
 		}
 	]
 }
