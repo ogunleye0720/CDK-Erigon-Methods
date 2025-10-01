@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "0fbf5897-c3b2-422c-a461-2a82e3e2a4db",
-		"name": "GAS & FEE METHODS",
+		"name": "GAS-FEE-METHODS",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "40386358",
 		"_collection_link": "https://www.postman.com/navigation-observer-13966261/workspace/cdk-erigon-rpc-methods/collection/40386358-0fbf5897-c3b2-422c-a461-2a82e3e2a4db?action=share&source=collection_link&creator=40386358"
@@ -266,13 +266,6 @@
 					""
 				]
 			}
-		}
-	],
-	"variable": [
-		{
-			"key": "rpc_url",
-			"value": "",
-			"type": "default"
 		}
 	]
 }
