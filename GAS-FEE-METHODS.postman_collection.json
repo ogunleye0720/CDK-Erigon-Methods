@@ -17,9 +17,9 @@
 					"raw": "{\r\n    \"jsonrpc\": \"2.0\",\r\n    \"method\": \"eth_gasPrice\",\r\n    \"params\": [],\r\n    \"id\": 2\r\n}"
 				},
 				"url": {
-					"raw": "{{rpc_url}}",
+					"raw": "{{BASE_URL}}",
 					"host": [
-						"{{rpc_url}}"
+						"{{BASE_URL}}"
 					]
 				}
 			},
@@ -34,9 +34,9 @@
 							"raw": "{\r\n    \"jsonrpc\": \"2.0\",\r\n    \"method\": \"eth_gasPrice\",\r\n    \"params\": [],\r\n    \"id\": 2\r\n}"
 						},
 						"url": {
-							"raw": "{{rpc_url}}",
+							"raw": "{{BASE_URL}}",
 							"host": [
-								"{{rpc_url}}"
+								"{{BASE_URL}}"
 							]
 						}
 					},
@@ -76,9 +76,9 @@
 					"raw": "{\r\n    \"jsonrpc\": \"2.0\",\r\n    \"method\": \"eth_estimateGas\",\r\n    \"params\": [],\r\n    \"id\": 2\r\n}"
 				},
 				"url": {
-					"raw": "{{rpc_url}}",
+					"raw": "{{BASE_URL}}",
 					"host": [
-						"{{rpc_url}}"
+						"{{BASE_URL}}"
 					]
 				}
 			},
@@ -93,9 +93,9 @@
 							"raw": "{\r\n    \"jsonrpc\": \"2.0\",\r\n    \"method\": \"eth_estimateGas\",\r\n    \"params\": [],\r\n    \"id\": 2\r\n}"
 						},
 						"url": {
-							"raw": "{{rpc_url}}",
+							"raw": "{{BASE_URL}}",
 							"host": [
-								"{{rpc_url}}"
+								"{{BASE_URL}}"
 							]
 						}
 					},
@@ -135,9 +135,9 @@
 					"raw": "{\r\n    \"jsonrpc\": \"2.0\",\r\n    \"method\": \"eth_feeHistory\",\r\n    \"params\": [\"0x5\", \"latest\", [25,50,75]],\r\n    \"id\": 2\r\n}"
 				},
 				"url": {
-					"raw": "{{rpc_url}}",
+					"raw": "{{BASE_URL}}",
 					"host": [
-						"{{rpc_url}}"
+						"{{BASE_URL}}"
 					]
 				}
 			},
@@ -152,9 +152,9 @@
 							"raw": "{\r\n    \"jsonrpc\": \"2.0\",\r\n    \"method\": \"eth_feeHistory\",\r\n    \"params\": [\"0x5\", \"latest\", [25,50,75]],\r\n    \"id\": 2\r\n}"
 						},
 						"url": {
-							"raw": "{{rpc_url}}",
+							"raw": "{{BASE_URL}}",
 							"host": [
-								"{{rpc_url}}"
+								"{{BASE_URL}}"
 							]
 						}
 					},
@@ -194,9 +194,9 @@
 					"raw": "{\r\n    \"jsonrpc\": \"2.0\",\r\n    \"method\": \"eth_maxPriorityFeePerGas\",\r\n    \"params\": [],\r\n    \"id\": 2\r\n}"
 				},
 				"url": {
-					"raw": "{{rpc_url}}",
+					"raw": "{{BASE_URL}}",
 					"host": [
-						"{{rpc_url}}"
+						"{{BASE_URL}}"
 					]
 				}
 			},
@@ -211,9 +211,9 @@
 							"raw": "{\r\n    \"jsonrpc\": \"2.0\",\r\n    \"method\": \"eth_maxPriorityFeePerGas\",\r\n    \"params\": [],\r\n    \"id\": 2\r\n}"
 						},
 						"url": {
-							"raw": "{{rpc_url}}",
+							"raw": "{{BASE_URL}}",
 							"host": [
-								"{{rpc_url}}"
+								"{{BASE_URL}}"
 							]
 						}
 					},
