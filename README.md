@@ -11,7 +11,7 @@ and validate RPC endpoints without manually building requests.
 Postman
 
 Newman
- (for local testting)
+ (for local testing)
 
 A valid RPC URL (injected via environment variable BASE_URL)
 
