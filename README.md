@@ -11,8 +11,8 @@ Repository Structure
 .
 ├── RPC-POSTMAN-COLLECTIONS   # JSON Postman collections
 ├── .github/workflows/         # GitHub Actions CI/CD pipelines
-│   ├── postman-tests.yml      # Runs all Postman collections with Newman
-│   └── readme-lint.yml        # Lints README for formatting
+│   ├── test.yml      # Runs all Postman collections with Newman
+│   └── lint.yml        # Lints README for formatting
 └── README.md
 ```
 
