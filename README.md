@@ -61,4 +61,4 @@ markdownlint CDK-Erigon-Methods/README.md
 
 Commit and push your changes, then open a PR.
 
-PR would merged if all test cases pass on CI.
+PR would merged be if all test cases pass on CI.
