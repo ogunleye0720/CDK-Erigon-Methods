@@ -44,9 +44,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{rpc_url}}",
+							"raw": "{{BASE_URL}}",
 							"host": [
-								"{{rpc_url}}"
+								"{{BASE_URL}}"
 							]
 						}
 					},
@@ -91,9 +91,9 @@
 					}
 				},
 				"url": {
-					"raw": "{{rpc_url}}",
+					"raw": "{{BASE_URL}}",
 					"host": [
-						"{{rpc_url}}"
+						"{{BASE_URL}}"
 					]
 				}
 			},
@@ -113,9 +113,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{rpc_url}}",
+							"raw": "{{BASE_URL}}",
 							"host": [
-								"{{rpc_url}}"
+								"{{BASE_URL}}"
 							]
 						}
 					},
@@ -155,9 +155,9 @@
 					"raw": "{\r\n    \"jsonrpc\": \"2.0\",\r\n    \"method\": \"eth_getCode\",\r\n    \"params\": [\"0xf37510fC77870b2fd5b43E6B8C97162af87d1fb6\",\"latest\"],\r\n    \"id\": 2\r\n}"
 				},
 				"url": {
-					"raw": "{{rpc_url}}",
+					"raw": "{{BASE_URL}}",
 					"host": [
-						"{{rpc_url}}"
+						"{{BASE_URL}}"
 					]
 				}
 			},
@@ -172,9 +172,9 @@
 							"raw": "{\r\n    \"jsonrpc\": \"2.0\",\r\n    \"method\": \"eth_getCode\",\r\n    \"params\": [\"0xf37510fC77870b2fd5b43E6B8C97162af87d1fb6\",\"latest\"],\r\n    \"id\": 2\r\n}"
 						},
 						"url": {
-							"raw": "{{rpc_url}}",
+							"raw": "{{BASE_URL}}",
 							"host": [
-								"{{rpc_url}}"
+								"{{BASE_URL}}"
 							]
 						}
 					},
@@ -214,9 +214,9 @@
 					"raw": "{\r\n    \"jsonrpc\": \"2.0\",\r\n    \"method\": \"eth_getTransactionCount\",\r\n    \"params\": [\"0xf37510fC77870b2fd5b43E6B8C97162af87d1fb6\", \"latest\"],\r\n    \"id\": 2\r\n}"
 				},
 				"url": {
-					"raw": "{{rpc_url}}",
+					"raw": "{{BASE_URL}}",
 					"host": [
-						"{{rpc_url}}"
+						"{{BASE_URL}}"
 					]
 				}
 			},
@@ -231,9 +231,9 @@
 							"raw": "{\r\n    \"jsonrpc\": \"2.0\",\r\n    \"method\": \"eth_getTransactionCount\",\r\n    \"params\": [\"0xf37510fC77870b2fd5b43E6B8C97162af87d1fb6\", \"latest\"],\r\n    \"id\": 2\r\n}"
 						},
 						"url": {
-							"raw": "{{rpc_url}}",
+							"raw": "{{BASE_URL}}",
 							"host": [
-								"{{rpc_url}}"
+								"{{BASE_URL}}"
 							]
 						}
 					},

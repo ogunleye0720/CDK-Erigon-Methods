@@ -48,9 +48,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{rpc_url}}",
+							"raw": "{{BASE_URL}}",
 							"host": [
-								"{{rpc_url}}"
+								"{{BASE_URL}}"
 							]
 						}
 					},
@@ -95,9 +95,9 @@
 					}
 				},
 				"url": {
-					"raw": "{{rpc_url}}",
+					"raw": "{{BASE_URL}}",
 					"host": [
-						"{{rpc_url}}"
+						"{{BASE_URL}}"
 					]
 				}
 			},
@@ -117,9 +117,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{rpc_url}}",
+							"raw": "{{BASE_URL}}",
 							"host": [
-								"{{rpc_url}}"
+								"{{BASE_URL}}"
 							]
 						}
 					},
@@ -159,9 +159,9 @@
 					"raw": "{\r\n    \"jsonrpc\": \"2.0\",\r\n    \"method\": \"eth_getBlockReceipts\",\r\n    \"params\": [\"latest\"],\r\n    \"id\": 1\r\n}"
 				},
 				"url": {
-					"raw": "{{rpc_url}}",
+					"raw": "{{BASE_URL}}",
 					"host": [
-						"{{rpc_url}}"
+						"{{BASE_URL}}"
 					]
 				}
 			},
@@ -177,9 +177,9 @@
 					"raw": "{\r\n    \"jsonrpc\": \"2.0\",\r\n    \"method\": \"eth_getBlockByHash\",\r\n    \"params\": [\"0x3e654867eb251a141dabac273b9fe06a23e5aa207ce7d7b3335097a44e1df094\", false],\r\n    \"id\": 2\r\n}"
 				},
 				"url": {
-					"raw": "{{rpc_url}}",
+					"raw": "{{BASE_URL}}",
 					"host": [
-						"{{rpc_url}}"
+						"{{BASE_URL}}"
 					]
 				}
 			},
@@ -194,9 +194,9 @@
 							"raw": "{\r\n    \"jsonrpc\": \"2.0\",\r\n    \"method\": \"eth_getBlockByHash\",\r\n    \"params\": [\"0x3e654867eb251a141dabac273b9fe06a23e5aa207ce7d7b3335097a44e1df094\", false],\r\n    \"id\": 2\r\n}"
 						},
 						"url": {
-							"raw": "{{rpc_url}}",
+							"raw": "{{BASE_URL}}",
 							"host": [
-								"{{rpc_url}}"
+								"{{BASE_URL}}"
 							]
 						}
 					},
@@ -241,9 +241,9 @@
 					}
 				},
 				"url": {
-					"raw": "{{rpc_url}}",
+					"raw": "{{BASE_URL}}",
 					"host": [
-						"{{rpc_url}}"
+						"{{BASE_URL}}"
 					]
 				}
 			},
@@ -263,9 +263,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{rpc_url}}",
+							"raw": "{{BASE_URL}}",
 							"host": [
-								"{{rpc_url}}"
+								"{{BASE_URL}}"
 							]
 						}
 					},
@@ -310,9 +310,9 @@
 					}
 				},
 				"url": {
-					"raw": "{{rpc_url}}",
+					"raw": "{{BASE_URL}}",
 					"host": [
-						"{{rpc_url}}"
+						"{{BASE_URL}}"
 					]
 				}
 			},
@@ -332,9 +332,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{rpc_url}}",
+							"raw": "{{BASE_URL}}",
 							"host": [
-								"{{rpc_url}}"
+								"{{BASE_URL}}"
 							]
 						}
 					},
@@ -379,9 +379,9 @@
 					}
 				},
 				"url": {
-					"raw": "{{rpc_url}}",
+					"raw": "{{BASE_URL}}",
 					"host": [
-						"{{rpc_url}}"
+						"{{BASE_URL}}"
 					]
 				}
 			},
@@ -401,9 +401,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{rpc_url}}",
+							"raw": "{{BASE_URL}}",
 							"host": [
-								"{{rpc_url}}"
+								"{{BASE_URL}}"
 							]
 						}
 					},
@@ -448,9 +448,9 @@
 					}
 				},
 				"url": {
-					"raw": "{{rpc_url}}",
+					"raw": "{{BASE_URL}}",
 					"host": [
-						"{{rpc_url}}"
+						"{{BASE_URL}}"
 					]
 				}
 			},
@@ -470,9 +470,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{rpc_url}}",
+							"raw": "{{BASE_URL}}",
 							"host": [
-								"{{rpc_url}}"
+								"{{BASE_URL}}"
 							]
 						}
 					},
@@ -512,9 +512,9 @@
 					"raw": "{\r\n    \"jsonrpc\": \"2.0\",\r\n    \"method\": \"eth_newBlockFilter\",\r\n    \"params\": [],\r\n    \"id\": 2\r\n}"
 				},
 				"url": {
-					"raw": "{{rpc_url}}",
+					"raw": "{{BASE_URL}}",
 					"host": [
-						"{{rpc_url}}"
+						"{{BASE_URL}}"
 					]
 				}
 			},
