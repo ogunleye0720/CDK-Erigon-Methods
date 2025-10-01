@@ -13,6 +13,9 @@ Postman
 Newman
  (for local testing)
 
+Markdownlint-cli
+ (for local testing of README.md if updated)
+
 A valid RPC URL (injected via environment variable BASE_URL)
 
 ## Usage
