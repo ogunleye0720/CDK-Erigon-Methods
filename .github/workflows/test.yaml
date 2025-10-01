@@ -36,7 +36,7 @@ jobs:
           for collection in ./*postman_collection.json; do
             echo "Running $collection ..."
             newman run "$collection" \
-              --env-var rpc_url=${{ secrets.BASE_URL }} \
+              --env-var BASE_URL=${{ secrets.BASE_URL }} \
               --reporters cli,junit \
               --reporter-junit-export "newman-results-$(basename $collection .json).xml"
           done
