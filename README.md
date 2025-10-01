@@ -13,60 +13,52 @@ Postman
 Newman
  (for local testting)
 
-A valid RPC URL (injected via environment variable rpc_url)
+A valid RPC URL (injected via environment variable BASE_URL)
 
 ## Usage
 
-Import a collection from RPC-POSTMAN-COLLECTIONS/ into Postman
+Clone repository and
+import a collection from CDK-Erigon-Methods/ into Postman
 workspace.
 
-Create a Postman environment with:
+Create a Global Postman environment variable with:
 
-rpc_url → Your RPC endpoint.
+BASE_URL → Your RPC endpoint.
 
 Execute requests directly from Postman.
-
-Run in CI/CD
-
-This repo includes a GitHub Actions workflow using Newman:
-
-```bash
-newman run CDK-Erigon-Methods<your_collection>.postman_collection.json \
-  --env-var BASE_URL=<your_rpc_url>
-```
-
-CI ensures:
-
-All collections run successfully against your configured endpoint.
-
-Hardcoded URLs are blocked → all requests must use {{rpc_url}}.
-
-Continuous Integration
-
-Postman Tests Workflow
-Runs all Postman collections automatically on pushes/PRs to main.
-Fails if:
-
-Any test fails in a collection.
-
-A collection uses a hardcoded RPC URL instead of {{rpc_url}}.
-
-README Lint Workflow
-Lints README.md with markdownlint whenever the file is updated.
 
 ## Contributing
 
 Fork the repo and create a feature branch:
 
 ```bash
-git checkout -b feature/add-new-methods
+
+git checkout -b <your-branch-name>
 
 ```
 
-Add or update Postman collections inside RPC-POSTMAN-COLLECTIONS/.
+Add or update Postman collections inside CDK-Erigon-Methods/.
 
-Make sure all requests use {{rpc_url}} (no hardcoded URLs).
+Make sure all requests use {{BASE_URL}} variable (no hardcoded URLs).
 
-Test locally with Newman.
+Test locally with Newman & make sure all tests passes.
+
+```bash
+
+newman run CDK-Erigon-Methods/<your_collection>.postman_collection.json \
+  --env-var BASE_URL=<your_rpc_url>
+
+```
+
+If contribution was made to README.md file,
+make sure changes are properly linted.
+
+```bash
+
+markdownlint CDK-Erigon-Methods/README.md
+
+```
 
 Commit and push your changes, then open a PR.
+
+PR would merged if all test cases pass on CI.
